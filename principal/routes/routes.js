@@ -12,7 +12,7 @@ router.get('/',(req, res) => {
 });
 
 router.get('/qwe',(req,res)=>{
-  res.send('asd')
+  res.send('4000')
 });
 
 router.get('/f/mostrar_guias',(req, res, next)=>{
