@@ -3,6 +3,8 @@ const router = express.Router();
 const fetch = require('node-fetch');
 var bodyParser = require('body-parser');
 
+
+/*desde windows */
 router.get('/',(req, res) => {
  // const tasks = await Task.find();
   res.render('mostrar_guias');
