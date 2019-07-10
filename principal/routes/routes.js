@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 
 
 /*desde windows */
+/*desde ubuntu*/
 router.get('/',(req, res) => {
  // const tasks = await Task.find();
   res.render('mostrar_guias');
