@@ -1,0 +1,25 @@
+{
+  "name": "dd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon principal/index.js",
+    "deb": "nodemon principal/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap3": "^3.3.5",
+    "ejs": "^2.6.2",
+    "express": "^4.16.4",
+    "fetch": "^1.1.0",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
