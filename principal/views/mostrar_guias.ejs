@@ -6,7 +6,22 @@
     <a class="navbar-brand" href="#">Listar Guias</a>
   </nav>
 
-  <div class="col-md-12">
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <form action="/add" method="POST">
+          <div class="form-group">
+            <input type="text" name="guias" id="" placeholder="mandar" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary">
+            mandar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-9">
     <table class="table table-bordered table-hover">
       <thead>
         <tr>
@@ -19,15 +34,9 @@
         </tr>
       </thead>
       <tbody>
-        
-          
-
-
+    
       </tbody>
-
     </table>
-
   </div>
-
 
 </body>
