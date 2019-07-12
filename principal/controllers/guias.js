@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 var bodyParser = require('body-parser');
 
 function mostrar_guias (req,res,next){
-  fetch('http://localhost:3000/b/mostrar_guias')
+  fetch('http://localhost:5000/b/mostrar_guias')
   .then(resp => resp.json())
   .then(resp =>{
     console.log(resp)
@@ -25,7 +25,7 @@ function añadir_guias(req,res){
              'Content-type' : "application/json"
            }
          };
-         fetch('http://localhost:3000/b/a_guias',metodo)
+         fetch('http://localhost:5000/b/a_guias',metodo)
          .then(res => res.json())
          .catch(error => console.error('Error:', error))
          .then(data => {
