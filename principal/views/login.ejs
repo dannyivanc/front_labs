@@ -1,0 +1,42 @@
+<% include partials/_header %>
+    <body>
+        <nav class="navbar navbar-dark bg-dark mb-4">
+             <a class="navbar-brand" href="#">login</a>
+        </nav>
+
+    <div class="login-vice">
+          <img class="avatar" src="img/logo.jpg" alt="aljand"> <br><br><br><br>
+          <h1>Iniciar sesion</h1>
+          <form action="/login" method="post"> <br>
+              <!-- nombre de usario -->
+              <label for="username">rudoc</label>
+              <input name="rudoc" type="text" placeholder="inserte su RUDOC" required autofocus > <br>
+              <!-- contraceña		 -->
+              <label for="contraceña">CI</label>
+              <input name="ci" type="password"placeholder="Inserte su CI"> <br>
+              <input type="submit" value="Entrar">
+        <td><a href="/regUSer"> Registrar usario </a></td> <br/>
+        <td> <a href="/userlist"> Mostrar Usuarios </a>  </td>
+          </form>
+      </div>
+  
+  </body>
+
+  <body>
+    <div class="login-vice">
+          <img class="avatar" src="img/logo.jpg" alt="aljand"> <br><br><br><br>
+          <h1>Iniciar sesion</h1>
+          <form action="/login" method="post"> <br>
+              <!-- nombre de usario -->
+              <label for="username">Usario</label>
+              <input name="email" type="text" placeholder="id de Usuario" required autofocus > <br>
+              <!-- contraceña		 -->
+              <label for="contraceña">Contraceña</label>
+              <input name="clave" type="password"placeholder="Inserte su contraceña"> <br>
+              <input type="submit" value="Entrar">
+        <td><a href="/regUSer"> Registrar usario </a></td> <br/>
+        <td> <a href="/userlist"> Mostrar Usuarios </a>  </td>
+          </form>
+      </div>
+  
+  </body>

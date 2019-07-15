@@ -1,7 +1,6 @@
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
-//aarasr
 const app = express();
 
 // importing routes

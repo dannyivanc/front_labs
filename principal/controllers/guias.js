@@ -1,5 +1,4 @@
 const fetch = require('node-fetch');
-var bodyParser = require('body-parser');
 
 function mostrar_guias (req,res,next){
   fetch('http://localhost:5000/b/mostrar_guias')
@@ -17,7 +16,7 @@ function añadir_guias(req,res){
         materia : req.body.materia,
         estado : req.body.estado
        };
-       a_guias = a_guias;
+       
            var metodo={
            method: 'POST',
            body: JSON.stringify(a_guias),
