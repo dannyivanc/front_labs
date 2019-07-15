@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-function mostrar_guias (req,res,next){
+async function mostrar_guias (req,res,next){
   fetch('http://localhost:5000/b/mostrar_guias')
   .then(resp => resp.json())
   .then(resp =>{
@@ -8,7 +8,7 @@ function mostrar_guias (req,res,next){
     res.send(resp)
   });
 }
-function añadir_guias(req,res){
+async function añadir_guias(req,res){
     var a_guias = {
         numero : req.body.numero,
         estudiante : req.body.estudiante,

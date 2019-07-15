@@ -13,10 +13,11 @@ router.get('/qwe',(req,res)=>{
 });
 
 router.get('/f/mostrar_guias',guiasCtrl.mostrar_guias)
-router.post('/f/a_guias',guiasCtrl.añadir_guias)
+//router.post('/f/a_guias',guiasCtrl.añadir_guias)
 
 
-router.post('/login',loginCtrl.login_docente)
+//router.post('/login',loginCtrl.login_docente)
+router.post('/f/a_docente',loginCtrl.a_docente)
 
 
 
