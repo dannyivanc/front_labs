@@ -29,7 +29,6 @@ async function a_docente(req,res){
 
 
 
-
 async function login_docente(req,res){
     var loginDoc = {
         rudoc: req.body.rudoc,
@@ -52,9 +51,12 @@ async function login_docente(req,res){
         res.send(data)
         console.log(metodo)
       })
+     
+      
 }
 module.exports ={
   login_docente,
   a_docente
     
 }
+
