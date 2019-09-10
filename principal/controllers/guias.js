@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 async function mostrar_guias (req,res,next){
-  fetch('http://localhost:5000/b/mostrar_guias')
+  fetch('http://localhost:5000/mostrar_guias')
   .then(resp => resp.json())
   .then(resp =>{
     console.log(resp)
@@ -36,6 +36,12 @@ async function añadir_guias(req,res){
          })
 }
 
+async function renderisar_mostrar_guias (req,res){
+  res.render('mostrar_guias')
+}
+
+
+
 /*
 router.get('/b/mostrar_guias',(req,res) =>{
   Guia.find({},(err,guias) =>{
@@ -50,5 +56,6 @@ router.get('/b/mostrar_guias',(req,res) =>{
 
 module.exports ={
     mostrar_guias,
-    añadir_guias
+    añadir_guias,
+    renderisar_mostrar_guias
 }

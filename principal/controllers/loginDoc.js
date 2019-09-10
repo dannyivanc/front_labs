@@ -41,15 +41,17 @@ async function login_docente(req,res){
         'Content-type' : "application/json"
        }
       };
-      console.log('asd')
-      console.log(metodo)
       fetch('http://localhost:5000/login', metodo)
       .then(res => res.json())
       .catch(error => console.error('Error:', error))
       .then(data => {
+       // res.send(data)
+
+       if(data==0){res.send('wiii')}
+       if(data==1){res.render('mostrar_guias')}
+       
         console.log(data)
-        res.send(data)
-        console.log(metodo)
+
       })
      
       
