@@ -6,7 +6,7 @@ const loginCtrl = require('../controllers/loginDoc')
 router.get('/login',(req,res)=>{
   res.render('login')
 })
-
+router.post()
 router.post('/login',loginCtrl.login_docente
 /*,(req,res)=>{
   res.render('login')
@@ -16,6 +16,7 @@ router.post('/login',loginCtrl.login_docente
 router.get('/qwe',guiasCtrl.renderisar_mostrar_guias);
 
 router.get('/mostrar_guias',guiasCtrl.mostrar_guias)
+
 router.post('/a_guias',guiasCtrl.añadir_guias)
 
 
