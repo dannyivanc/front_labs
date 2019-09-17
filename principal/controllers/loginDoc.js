@@ -47,8 +47,8 @@ async function login_docente(req,res){
       .then(data => {
        // res.send(data)
 
-       if(data==0){res.send('wiii')}
-       if(data==1){res.render('mostrar_guias')}
+       if(data==0){res.render('login')}
+       if(data==1){res.redirect('http://localhost:4000/qwe')}
        
         console.log(data)
 
