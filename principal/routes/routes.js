@@ -6,7 +6,8 @@ const loginCtrl = require('../controllers/loginDoc')
 router.get('/login',(req,res)=>{
   res.render('login')
 })
-router.post()
+
+
 router.post('/login',loginCtrl.login_docente
 /*,(req,res)=>{
   res.render('login')

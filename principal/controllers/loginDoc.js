@@ -1,5 +1,6 @@
 const fetch = require ('node-fetch')
-
+const localStorage = require('node-localstorage')
+localStorage =new localStorage('./scratch')
 async function a_docente(req,res){
   var ado ={
       rudoc : req.body.rudoc,
@@ -48,7 +49,12 @@ async function login_docente(req,res){
        // res.send(data)
 
        if(data==0){res.render('login')}
-       if(data==1){res.redirect('http://localhost:4000/qwe')}
+       if(data==1){
+          res.redirect('http://localhost:4000/qwe')
+          localStorage.setItem('cidocente',JSON.stringify(ci)) 
+            }
+
+    
        
         console.log(data)
 
